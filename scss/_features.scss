@@ -1,0 +1,41 @@
+/* Features */
+.features {
+	padding: 100px 0;
+
+	.filter-nav {
+		margin-top: 60px;
+
+		.filter-link {
+			margin: 0 20px;
+
+			color: $black;
+			font-size: 22px;
+			font-weight: 600;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			transition: color .1s linear;
+
+			@media (min-width: 310px) and (max-width: 767.98px) {
+				display: block;
+				margin: 0 10px;
+			}
+
+			&.active {
+				color: $red;
+			}
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+
+	.filter-image {
+		.rounded {
+			max-width: 100%;
+			height: auto;
+			border-radius: 0 !important;
+		}
+	}
+}

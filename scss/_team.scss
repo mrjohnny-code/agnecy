@@ -1,0 +1,79 @@
+/* Our Team */
+.team {
+	padding-bottom: 100px;
+	
+	.team-photo-big {
+		.team-img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.team-name {
+		font-size: 30px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.team-subtitle {
+		max-width: 80%;
+		font-size: 16px;
+		font-weight: 400;	
+	}
+	.team-soc {
+		.team-link {
+			margin-right: 30px;
+
+			color: $black;
+			font-size: 18px;
+			font-style: italic;
+			text-decoration: none;
+			transition: color .1s linear;
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	.team-photo-small {
+		position: relative;
+
+		&:hover .photo-hover {
+			opacity: 1;
+		}
+		
+		.photo-img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+		.photo-hover {
+			width: 100%;
+			height: 35px;
+
+			background-color: $black;
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+
+			opacity: 0;
+
+			transition: opacity .1s linear;
+
+			span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 1;
+
+				transform: translate(-50%, -50%);
+				
+				color: $white;
+				font-size: 16px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

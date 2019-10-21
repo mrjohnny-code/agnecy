@@ -1,0 +1,39 @@
+/* Footer */
+.footer {
+	padding: 40px 0;
+
+	background-color: $black;
+
+	&-copyright {
+		color: $dark_gray;
+	}
+	.social-link {
+		display: inline-block;
+		width: 33px;
+		height: 33px;
+		
+		border-radius: 50%;
+		background-color: $gray;
+
+		position: relative;
+		
+		&:hover i {
+			color: $red;
+		}
+
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 2;
+
+			transform: translate(-50%, -50%);
+			
+			font-size: 18px;
+			color: $black;
+
+			transition: color .1s linear;
+		}
+		
+	}
+}

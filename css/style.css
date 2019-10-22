@@ -84,6 +84,8 @@ ul, li {
   .header .navbar {
     padding: 0;
     background-color: #313030; }
+    .header .navbar-toggler {
+      outline: none; }
     .header .navbar-nav {
       height: 90px; }
       .header .navbar-nav .nav-item {
@@ -208,6 +210,9 @@ ul, li {
         .features .filter-nav .filter-link {
           display: block;
           margin: 0 10px; } }
+      @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .features .filter-nav .filter-link {
+          font-size: 16px; } }
       .features .filter-nav .filter-link.active {
         color: #ff3b3b; }
       .features .filter-nav .filter-link:hover {
@@ -269,6 +274,9 @@ ul, li {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase; }
+        @media (min-width: 767.98px) and (max-width: 1199.98px) {
+          .team .team-photo-small .photo-hover span {
+            font-size: 9px; } }
 
 /* Subscribe */
 .subscribe {
